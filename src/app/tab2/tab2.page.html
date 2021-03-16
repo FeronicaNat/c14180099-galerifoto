@@ -15,11 +15,25 @@
           <label> Haloo nama saya Feronica NRP C14180099</label><br>
           <ion-icon name="rocket-outline"></ion-icon>
           <label> Lets play!!</label>
-
         <!-- </div> -->
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <ion-row>
+    <ion-col text-center>
+      <ion-input type="number" [(ngModel)]="angkagame" placeholder="Enter number" > </ion-input>
+      <ion-button (click)="saveangka(angkagame)">Input angka</ion-button>
+
+      <ng-template *ngIf="show;then templatetrue;else templatefalse"> </ng-template>
+
+      <ng-template #templatetrue>
+        <img src="assets/cat.JPG">
+      </ng-template>
+
+    </ion-col>
+  </ion-row>
+  
 
  
   <!-- <ion-header collapse="condense">
