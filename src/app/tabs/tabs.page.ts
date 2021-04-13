@@ -10,3 +10,9 @@ export class TabsPage {
   constructor() {}
 
 }
+
+interface data{
+  judul:string,
+  isi:string
+
+}
